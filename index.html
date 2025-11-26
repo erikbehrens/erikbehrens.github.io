@@ -713,6 +713,44 @@
             object-fit: cover;
             display: block;
         }
+        .word-cloud {
+        position: absolute;
+        inset: 0.5rem 0.7rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.4rem;
+        align-content: flex-start;
+        font-size: 0.75rem;
+        pointer-events: none;
+        }
+        
+        .word-cloud span {
+            padding: 0.12rem 0.5rem;
+            border-radius: 999px;
+            background: rgba(2, 24, 48, 0.8);
+            border: 1px solid rgba(148, 210, 255, 0.6);
+            color: #e2f3ff;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            pointer-events: auto;
+        }
+        
+        .word-cloud span.big {
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: rgba(10, 143, 183, 0.85);
+            border-color: rgba(129, 230, 217, 0.9);
+        }
+        
+        .word-cloud span.medium {
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+        
+        .word-cloud span.faint {
+            opacity: 0.8;
+        }
+        
 
     </style>
 </head>
@@ -800,14 +838,27 @@
                                     <div class="ocean-stat-caption">Excess heat stored in the ocean</div>
                                 </div>
                             </div>
-                            <div class="mini-graph">
-                                <div class="mini-graph-grid"></div>
-                                <div class="mini-wave"></div>
-                                <div class="mini-graph-footer">
-                                    <span>Global SST increase</span>
-                                    <span>Since 1982 (illustrative)</span>
-                                </div>
-                            </div>
+<div class="mini-graph">
+    <div class="mini-graph-grid"></div>
+    <div class="mini-wave"></div>
+    <div class="word-cloud">
+        <span class="big">Marine heatwaves</span>
+        <span class="medium">Southern Ocean</span>
+        <span class="medium">Antarctic margins</span>
+        <span class="medium">Global overturning circulation</span>
+        <span>Sea-level change</span>
+        <span>Coastal extremes</span>
+        <span>Internal waves &amp; mixing</span>
+        <span>Regional ocean modelling</span>
+        <span>NZ &amp; Tasman Sea</span>
+        <span>Climate extremes</span>
+        <span class="faint">Ross Gyre</span>
+        <span class="faint">Ice–ocean interaction</span>
+        <span class="faint">Data-driven emulators</span>
+        <span class="faint">Decision support</span>
+    </div>
+</div>
+
                         </div>
                     </div>
                 </div>
